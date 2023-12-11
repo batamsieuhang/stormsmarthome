@@ -33,7 +33,7 @@ public class MQTT_publisher {
 }
 
 class DeviceNotificationPublisher extends Thread {
-    String brokerURL = "tcp://mqtt-broker:1883";
+    String brokerURL = "tcp://172.31.21.206:1883";
     String globalTopic = "%siot-notification";
     String deviceTopic = "%sdevice-%d-%d-%d-notification";
     String householdTopic = "%shousehold-%d-%d-notification";
@@ -88,7 +88,7 @@ class DeviceNotificationPublisher extends Thread {
 }
 
 class HouseholdNotificationPublisher extends Thread {
-    String brokerURL = "tcp://mqtt-broker:1883";
+    String brokerURL = "tcp://172.31.21.206:1883";
     String globalTopic = "%siot-notification";
     String householdTopic = "%shousehold-%d-%d-notification";
     String houseTopic = "%shouse-%d-notification";
@@ -140,7 +140,7 @@ class HouseholdNotificationPublisher extends Thread {
 }
 
 class HouseNotificationPublisher extends Thread {
-    String brokerURL = "tcp://mqtt-broker:1883";
+    String brokerURL = "tcp://172.31.21.206:1883";
     String globalTopic = "%siot-notification";
     String houseTopic = "%shouse-%d-notification";
     String topicPrefix = "";
@@ -189,7 +189,7 @@ class HouseNotificationPublisher extends Thread {
 }
 
 class StormLogPublisher extends Thread {
-    String brokerURL = "tcp://mqtt-broker:1883";
+    String brokerURL = "tcp://172.31.21.206:1883";
     String stormLogTopic = "%sstorm-log";
     String topicPrefix = "";
     File locker;

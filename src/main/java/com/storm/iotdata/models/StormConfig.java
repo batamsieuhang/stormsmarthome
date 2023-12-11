@@ -15,11 +15,11 @@ public class StormConfig implements Serializable{
     private boolean cleanDatabase = false;
     private Integer updateInterval = 1;
     private String topologyName = "iot-smarthome";
-    private String stormBrokerURL = "tcp://mqtt-broker:1883";
+    private String stormBrokerURL = "tcp://172.31.21.206:1883";
     private List<String> stormTopicList = Arrays.asList(new String[] { "iot-data" });
     private List<Integer> stormWindowList = Arrays.asList(new Integer[] { 1, 5, 10, 15, 20, 30, 60, 120 });
     private boolean notificationMQTT = true;
-    private String notificationBrokerURL = "tcp://mqtt-broker:1883";
+    private String notificationBrokerURL = "tcp://172.31.21.206:1883";
     private String mqttTopicPrefix = "";
     private int houseLogGap = 20;
     private boolean houseCheckMin = false;

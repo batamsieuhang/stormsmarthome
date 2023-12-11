@@ -1,13 +1,13 @@
 database.clean: false
 database.updateInterval: 60
 storm.topologyName: "iot-smarthome"
-spout.brokerURL: "tcp://mqtt-broker:1883"
+spout.brokerURL: "tcp://172.31.21.206:1883"
 spout.topicList: ["iot-data"]
 spout.triggerInterval: 1000
 iot analytics.windowList: [1, 5, 10, 15, 20, 30, 60, 120]
 
 notification.publishMQTT: true
-notification.brokerURL: "tcp://mqtt-broker:1883"
+notification.brokerURL: "tcp://172.31.21.206:1883"
 notification.topicPrefix: ""
 
 notification.house.logGap: 20
